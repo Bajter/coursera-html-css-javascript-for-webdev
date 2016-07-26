@@ -3,3 +3,172 @@
 * @since 2016
 * Do not copy without permission or contacting the author
 */
+
+/*
+Desktop, Tablet and Mobile versions on a single page
+Desktop 992px +
+Tablet 768-991px
+Mobile <768
+
+Page heading, three sections; dummy lorem ipsum text inside / whatever
+
+DESKTOP
+All three sections should take up equal amount of space on the screen
+// float + %
+
+TABLET
+First two sections take half the screen each,
+third section takes second row, full screen width
+
+MOBILE
+each section takes entire row
+
+TITLES
+Title region, TOP RIGHT CORNER OF THE SECTION
+
+SPACING - use mockup!!!
+Note spaces between edges of section and edges of the browser, spacing between text and borders
+Dummy text should not overlap section title region!!! (margin and padding, border box as box-sizing!)
+
+BORDERS AND COLORS
+Each section should have background color set, background color of section title should be unique.
+The text should be still visible in both backgrounds and section titles.
+
+SET BLACK BORDER ON BOTH SECTION AND SECTION TITLE THAT'S 1PX THICK FOR EASIER GRADING
+
+set a font family as an option
+
+
+ */
+
+/* to properly define the border-box, so width doesn't add up with borders and paddings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #446022;
+    float: left;
+}
+
+
+header {
+    color: #C0C0C0;
+    margin: 0.3em;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+/* section holder, just in case we want to add more sections */
+.row {
+    float: left;
+    /*background-color: #FFFF00;*/
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+/* a single "block" */
+section {
+    position: relative;
+    float: left;
+}
+
+/* section content */
+article{
+    /* Made so the title border is inset inside of this one */
+    border-style: double;
+    border-width: 8px;
+
+    clear: right;
+
+    margin: 5px;
+
+    border-color: black;
+    background-color: #A8B088;
+    color: #000000;
+    height: 100%;
+
+    font-family: "Tahoma", "Geneva", "sans-serif";
+}
+
+article > .article-title {
+    float: right;
+    text-align: center;
+    width: 33.33%;
+
+    border-style: solid;
+    border-color: #3288C0;
+    /* Made in a way that "insets" this border
+     within the double border of section element */
+    border-width: 3px;
+
+    margin-top: -3px;
+    margin-right: -3px;
+    margin-bottom: 0px;
+    /*margin-left: 66.66%;*/
+
+    font-family: "Impact", "Charcoal", "sans-serif";
+}
+
+article > .article-body{
+    clear: right;
+    margin: 1em;
+}
+
+/* Unique "article-title" colours, depending on the section they appear in */
+section:nth-child(1) h2.article-title{
+    background-color: #FFC000;
+    color: #000000;
+}
+
+
+section:nth-child(2) h2.article-title{
+    background-color: #00FFC0;
+    color: #000000;
+}
+
+section:nth-child(3) h2.article-title{
+    background-color: #C0C0FF;
+    color: #000000;
+}
+
+footer {
+    font-size: 0.75em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0em 0.45em 0.85em 0.45em;
+    float: right;
+    font-family: "Lucida Console", "Monospace";
+}
+
+ /*
+ * Defines DESKTOP specific css
+ */
+@media (min-width:992px) {
+    .col-lg-4 {
+        width: 33.33%;
+    }
+}
+
+/*
+* Defines TABLET specific css
+*/
+@media (min-width:768px) and (max-width:991px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+/*
+* Defines MOBILE specific css
+*/
+@media (max-width:767px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
