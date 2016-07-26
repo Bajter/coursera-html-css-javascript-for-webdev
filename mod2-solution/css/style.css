@@ -5,41 +5,11 @@
 */
 
 /*
-Desktop, Tablet and Mobile versions on a single page
-Desktop 992px +
-Tablet 768-991px
-Mobile <768
-
-Page heading, three sections; dummy lorem ipsum text inside / whatever
-
-DESKTOP
-All three sections should take up equal amount of space on the screen
-// float + %
-
-TABLET
-First two sections take half the screen each,
-third section takes second row, full screen width
-
-MOBILE
-each section takes entire row
-
-TITLES
-Title region, TOP RIGHT CORNER OF THE SECTION
-
-SPACING - use mockup!!!
-Note spaces between edges of section and edges of the browser, spacing between text and borders
-Dummy text should not overlap section title region!!! (margin and padding, border box as box-sizing!)
-
-BORDERS AND COLORS
-Each section should have background color set, background color of section title should be unique.
-The text should be still visible in both backgrounds and section titles.
-
-SET BLACK BORDER ON BOTH SECTION AND SECTION TITLE THAT'S 1PX THICK FOR EASIER GRADING
-
-set a font family as an option
-
-
- */
+*    Desktop, Tablet and Mobile versions on a single page
+*    Desktop 992px +
+*    Tablet 768-991px
+*    Mobile <768
+*/
 
 /* to properly define the border-box, so width doesn't add up with borders and paddings */
 * {
@@ -55,7 +25,7 @@ body {
 header {
     color: #C0C0C0;
     margin: 0.3em;
-    font-size: 2.5em;
+    font-size: 1.75em;
     font-weight: bold;
     font-style: italic;
     text-align: center;
@@ -109,10 +79,12 @@ article > .article-title {
     margin-bottom: 0px;
     /*margin-left: 66.66%;*/
 
+    font-size: 1.25em;
     font-family: "Impact", "Charcoal", "sans-serif";
 }
 
 article > .article-body{
+    font-size: 1em;
     clear: right;
     margin: 1em;
 }
