@@ -4,7 +4,51 @@
 * Do not copy without permission or contacting the author
 */
 
-div {
-    background-color: #FF00FF;
-    color: #00FF00;
+#header-nav {
+    background-color: #BA9013;
+    border-radius: 0;
+    border-width: 0;
+
+}
+
+#logo-img {
+    background: url('../images/restaurant-logo.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+    margin-top: 15px;
+}
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+body {
+    font-size: 16px;
+    color: #FFF;
+    background-color: #61122F;
+    font-family: 'Oxygen', sans-serif;
 }
