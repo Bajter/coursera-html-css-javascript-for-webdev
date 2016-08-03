@@ -1,0 +1,56 @@
+
+/*required as fixed navbar is 50px high*/
+body {
+    padding-top: 70px;
+    background-color: #445525;
+    color: #D0D0D0;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+#brand-name{
+    font-size: 2em;
+    color: #D0D0D0;
+}
+
+#content-row div {
+    background-color: #670044;
+    margin: 15px 0 0;
+    padding: 0 1em 1em;
+}
+#content-row p {
+    font-style: italic;
+}
+
+#navbar {
+    background-color: #670044;
+}
+
+#navigation {
+    padding: 0;
+}
+#navigation a {
+    color: #F0F0F0;
+}
+#navigation hr {
+    width: 75%;
+    padding: 0;
+    margin: auto;
+}
+#navigation ul {
+    font-size: 1.35em;
+    margin: 0;
+    background-color: #446700;
+}
+
+.navbar .navbar-toggle,
+.navbar-header .icon-bar {
+    border: 1px solid #C0C0C0;
+}
